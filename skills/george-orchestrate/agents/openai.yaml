@@ -1,0 +1,6 @@
+interface:
+  display_name: "george-orchestrate"
+  short_description: "George 的多阶段编排、PR推进、持续执行、暂停和恢复。按任务寿命和规模启用。"
+  default_prompt: "请使用 $george-orchestrate 完成本轮任务。"
+policy:
+  allow_implicit_invocation: false

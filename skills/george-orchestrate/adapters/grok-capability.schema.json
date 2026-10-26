@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "george.grok.capability/1",
+  "title": "George Grok capability snapshot",
+  "description": "Session-bound probe output. Skill tree keeps this shape only. Catalogs stay empty here; fill types only in a task-dir snapshot for the current session.",
+  "type": "object",
+  "required": ["schema", "probed_at", "session_bound", "reuse", "tool", "models", "types", "absent", "quota", "isolation", "depth"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "george.grok.capability/1" },
+    "probed_at": { "type": "string" },
+    "session_bound": { "const": true },
+    "reuse": { "const": "forbid-across-sessions" },
+    "tool": {
+      "type": "object",
+      "required": ["namespace", "name", "required", "optional"],
+      "additionalProperties": false,
+      "properties": {
+        "namespace": { "type": "string" },
+        "name": { "const": "spawn_subagent" },
+        "required": { "type": "array", "items": { "type": "string" } },
+        "optional": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "models": {
+      "type": "array",
+      "description": "Empty in the skill schema file. Session snapshots may list user-requested slugs only.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "types": {
+      "type": "array",
+      "description": "Empty in the skill schema file. Session snapshots copy live subagent_type entries.",
+      "items": {
+        "type": "object",
+        "required": ["name", "writes"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "writes": { "enum": ["yes", "no", "unknown"] },
+          "user_gated": { "type": "boolean" }
+        }
+      },
+      "default": []
+    },
+    "absent": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Names that must not be treated as callable Grok APIs this session."
+    },
+    "quota": {
+      "type": "object",
+      "required": ["status", "probe"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["unknown", "rate-limit-seen"] },
+        "probe": { "enum": ["unsupported", "session-usage-only", "error-text"] }
+      }
+    },
+    "isolation": {
+      "type": "object",
+      "required": ["default", "worktree"],
+      "additionalProperties": false,
+      "properties": {
+        "default": { "const": "none" },
+        "worktree": { "const": "optional-independent-writes" }
+      }
+    },
+    "depth": {
+      "type": "object",
+      "required": ["max_nesting", "child_can_spawn"],
+      "additionalProperties": false,
+      "properties": {
+        "max_nesting": { "const": 1 },
+        "child_can_spawn": { "const": false }
+      }
+    },
+    "model_policy": {
+      "type": "string",
+      "enum": ["inherit-parent-unless-user-named"]
+    }
+  }
+}

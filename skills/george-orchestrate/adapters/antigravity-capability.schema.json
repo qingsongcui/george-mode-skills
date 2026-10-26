@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "george.antigravity.capability/1",
+  "title": "George Antigravity capability snapshot",
+  "description": "Session-bound probe output. Skill tree keeps this shape only. Catalogs stay empty here; fill types and models only in a task-dir snapshot for the current session.",
+  "type": "object",
+  "required": ["schema", "probed_at", "session_bound", "reuse", "tool", "models", "types", "absent", "quota", "isolation", "depth"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "george.antigravity.capability/1" },
+    "probed_at": { "type": "string" },
+    "session_bound": { "const": true },
+    "reuse": { "const": "forbid-across-sessions" },
+    "tool": {
+      "type": "object",
+      "required": ["namespace", "name", "required", "optional", "follow_up", "manage"],
+      "additionalProperties": false,
+      "properties": {
+        "namespace": { "type": "string" },
+        "name": { "const": "invoke_subagent" },
+        "required": { "type": "array", "items": { "type": "string" } },
+        "optional": { "type": "array", "items": { "type": "string" } },
+        "follow_up": { "const": "send_message" },
+        "manage": { "const": "manage_subagents" }
+      }
+    },
+    "models": {
+      "type": "array",
+      "description": "Empty in the skill schema file. Session snapshots may list live Model tier enum values.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "types": {
+      "type": "array",
+      "description": "Empty in the skill schema file. Session snapshots copy live TypeName entries.",
+      "items": {
+        "type": "object",
+        "required": ["name", "writes"],
+        "additionalProperties": false,
+        "properties": {
+          "name": { "type": "string" },
+          "writes": { "enum": ["yes", "no", "unknown"] },
+          "custom_definable": { "type": "boolean" }
+        }
+      },
+      "default": []
+    },
+    "absent": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Names that must not be treated as callable Antigravity APIs this session."
+    },
+    "quota": {
+      "type": "object",
+      "required": ["status", "probe"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["unknown", "rate-limit-seen"] },
+        "probe": { "enum": ["unsupported", "error-text"] }
+      }
+    },
+    "isolation": {
+      "type": "object",
+      "required": ["default", "modes"],
+      "additionalProperties": false,
+      "properties": {
+        "default": { "const": "inherit" },
+        "modes": {
+          "type": "array",
+          "items": { "enum": ["inherit", "branch", "share"] }
+        }
+      }
+    },
+    "depth": {
+      "type": "object",
+      "required": ["max_nesting", "child_can_spawn_default"],
+      "additionalProperties": false,
+      "properties": {
+        "max_nesting": { "const": 1 },
+        "child_can_spawn_default": { "const": false }
+      }
+    }
+  }
+}

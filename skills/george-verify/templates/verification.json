@@ -1,0 +1,47 @@
+{
+  "cwd": "/REPLACE_WITH_PROJECT",
+  "version": "REPLACE_WITH_HEAD_OR_CONTENT_HASH",
+  "artifacts": [
+    "artifacts/observed-result.json"
+  ],
+  "launch": {
+    "argv": [
+      "python3",
+      "-c",
+      "raise SystemExit(\"Replace with discovered project command\")"
+    ],
+    "timeout_seconds": 60
+  },
+  "doctor": {
+    "argv": [
+      "python3",
+      "-c",
+      "raise SystemExit(\"Replace with discovered project command\")"
+    ],
+    "timeout_seconds": 60
+  },
+  "drive": {
+    "argv": [
+      "python3",
+      "-c",
+      "raise SystemExit(\"Replace with discovered project command\")"
+    ],
+    "timeout_seconds": 60
+  },
+  "evidence": {
+    "argv": [
+      "python3",
+      "-c",
+      "raise SystemExit(\"Replace with discovered project command\")"
+    ],
+    "timeout_seconds": 60
+  },
+  "cleanup": {
+    "argv": [
+      "python3",
+      "-c",
+      "raise SystemExit(\"Replace with discovered project command\")"
+    ],
+    "timeout_seconds": 60
+  }
+}

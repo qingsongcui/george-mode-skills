@@ -1,0 +1,6 @@
+interface:
+  display_name: "george-mode"
+  short_description: "George 个人工作协议：按任务调用、依证据执行并核验真实结果"
+  default_prompt: "使用 $george-mode 完成本轮任务，并提供实际验收证据。"
+policy:
+  allow_implicit_invocation: false

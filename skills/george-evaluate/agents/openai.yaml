@@ -1,0 +1,6 @@
+interface:
+  display_name: "george-evaluate"
+  short_description: "George 的盲测、性能数字审计和技能更新验收。由总入口或用户明确调用。"
+  default_prompt: "请使用 $george-evaluate 完成本轮任务。"
+policy:
+  allow_implicit_invocation: false

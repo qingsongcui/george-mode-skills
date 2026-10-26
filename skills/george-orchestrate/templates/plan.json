@@ -1,0 +1,36 @@
+{
+  "mode": "plan-only",
+  "units": [
+    {
+      "id": "feature-a",
+      "depends_on": [],
+      "owner": "feature-owner",
+      "files": [
+        "src/feature-a"
+      ],
+      "deliverable": "行为变化与可运行产物",
+      "acceptance": "用户从指定入口完成预期动作",
+      "rollback": "恢复本轮隔离改动，不动用户未提交内容",
+      "playbook": "feature",
+      "checks": {
+        "unit": {
+          "applicable": true,
+          "method": "项目实际测试命令",
+          "pass_when": "行为断言通过",
+          "evidence": "artifacts/unit.txt"
+        },
+        "live": {
+          "applicable": true,
+          "method": "真实入口操作和状态回读",
+          "pass_when": "目标动作与结果均可观察",
+          "evidence": "artifacts/live.json"
+        },
+        "perf": {
+          "applicable": false,
+          "reason": "本单元不改变性能关键路径；源码调查确认"
+        }
+      }
+    }
+  ],
+  "project_root": "/REPLACE_WITH_PROJECT"
+}

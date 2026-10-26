@@ -1,0 +1,6 @@
+interface:
+  display_name: "george-engineer"
+  short_description: "George 的完整开发领域包，处理功能、故障、重构、性能、取证、视觉等价和工程交付。"
+  default_prompt: "请使用 $george-engineer 完成本轮任务。"
+policy:
+  allow_implicit_invocation: false
