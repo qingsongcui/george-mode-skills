@@ -17,6 +17,6 @@ The bar is triviality, not repetition. A one-off still earns a lever when the le
 
 Distinct from [Encode Lessons in Structure](principle-encode-lessons-in-structure.md), which makes a recurring instruction a durable guardrail. This is throughput and reviewability on the work in front of you. For scripting the verification itself, see [Prove It Works](principle-prove-it-works.md).
 
-## George 适用边界
+## George scope (George 适用边界)
 
-复用已有工具优先；脚本价值由可重跑证明或减少重复错误决定，不为每个小修改造框架。
+Prefer reusing existing tools; a script earns its place by rerunnable proof or by preventing repeated errors. Do not build a framework for every small change.

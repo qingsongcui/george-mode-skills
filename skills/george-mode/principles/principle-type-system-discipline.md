@@ -11,6 +11,6 @@ Make the compiler reject impossible states, mismatched primitives, and unhandled
 - **Derive types from authoritative schemas.** When a protocol buffer, OpenAPI spec, GraphQL schema, database migration, design-token file, or another file owns a shape, derive from it instead of hand-rolling a parallel type. See the **encode-lessons-in-structure** principle skill.
 - **Strengthen a type only where partiality appears.** A runtime assertion, null check, or "this should never happen" throw marks the place a type is too weak. Push that check up into the type. Then stop. The type system's job is to track the cases each use site must handle, not to describe the data as precisely as possible. Prefer total functions. `sum` of an empty list is 0, so it takes the plain list. `head` of an empty list has no answer, so it demands the non-empty one. If nothing would otherwise panic, keep the plain type.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-TypeScript细则见 george-engineer/workflows/code-quality.md；不把某语言类型系统当所有运行时的保证。
+TypeScript specifics are in george-engineer/workflows/code-quality.md; one language's type system is not a guarantee for every runtime.

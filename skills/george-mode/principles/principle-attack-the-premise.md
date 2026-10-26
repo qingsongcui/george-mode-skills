@@ -14,6 +14,6 @@ When two or more fixes that share one premise have failed the same gate, suspect
 
 This principle is distinct from [Redesign from First Principles](principle-redesign-from-first-principles.md), which rebuilds a design around a new requirement. It questions a fact the current design assumes.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-按触发场景应用；结果有证据、适用边界和反例。重要现实决策接理论闭环，普通工程不强制全套经营记账。
+Apply when the trigger fits; results carry evidence, scope limits and counterexamples. Important real-world decisions go through the theory loop; ordinary engineering does not require full operational record-keeping.

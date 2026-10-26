@@ -11,6 +11,6 @@ Maintainability is the work a reader must do to understand code. Track two axes:
 
 **The test:** can a new reader answer "where does X come from?" and "what can change X?" in under 30 seconds? If not, cut layers or cut state.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-按触发场景应用；结果有证据、适用边界和反例。重要现实决策接理论闭环，普通工程不强制全套经营记账。
+Apply when the trigger fits; results carry evidence, scope limits and counterexamples. Important real-world decisions go through the theory loop; ordinary engineering does not require full operational record-keeping.

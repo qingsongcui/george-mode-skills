@@ -18,6 +18,13 @@ def verify(root):
     required += ['skills/george-mode/references/' + name for name in
                  ['decision-loop.md', 'verify-before-deliver.md', 'theory.md']]
     required += ['skills/george-orchestrate/adapters/' + host + '.md' for host in ['codex', 'cursor', 'omp', 'grok', 'antigravity']]
+    required += ['LICENSE', 'NOTICE.md', 'NOTICE.zh.md', 'README.md', 'README.zh.md', 'docs/glossary.md',
+                 'skills/george-mode/SKILL.en.md']
+    required += ['theory/' + name for name in
+                 ['00_开始使用.md', '00_开始使用.en.md', '01_反身实践私典_理论全本.md',
+                  '01_反身实践私典_理论全本.en.md', '02_闭环运行手册.md', '03_AI协作指令.md',
+                  '04_闭环记录工作簿_空白模板.xlsx', '04_闭环记录工作簿_空白模板.en.xlsx',
+                  '06_字段与编号规范.md', '07_理论来源与修订说明.md']]
     for name in required:
         if name not in entries:
             errors.append('required file absent from manifest: ' + name)

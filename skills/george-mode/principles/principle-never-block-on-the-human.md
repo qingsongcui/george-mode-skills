@@ -8,6 +8,6 @@ The human supervises asynchronously. Agents must stay unblocked. Make reasonable
 - Reversible actions (write code, edit notes, split tasks) should proceed without blocking.
 - Product direction comes from the human. Execution should not block.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-已授权可逆工作直接做；历史偏好、默认方案和等待超时不能产生授权。外部消息/发布/费用按本轮授权；不自动扩展任务。
+Do authorized reversible work directly; past preferences, default plans and wait timeouts never create authorization. External messages, publishing and spending follow this round's authorization; do not expand the task automatically.

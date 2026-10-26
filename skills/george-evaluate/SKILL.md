@@ -1,8 +1,10 @@
 ---
 name: george-evaluate
-description: "George 的盲测、性能数字审计和技能更新验收。由总入口或用户明确调用。"
+description: "George 的盲测、性能数字审计和技能更新验收。由总入口或用户明确调用。 / George's blind tests, performance-number audits and acceptance of skill updates. Invoked by the main entry or explicitly by the user."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 评价方法与技能改进
 

@@ -1,6 +1,6 @@
 # george-mode
 
-由 11 个技能组成的 Agent 技能矩阵，让编码/知识型 Agent 按“**决策 → 执行 → 验证 → 复盘**”闭环工作：高后果选择前登记目标、假设、反证、预测和停止条件；声称完成前先验证真实行为。
+由 11 个技能组成的 Agent 技能矩阵，让编码/知识型 Agent 按“**决策 → 执行 → 验证 → 复盘**”闭环工作：高后果选择前登记目标、假设、反证、预测和停止条件；声称完成前先验证真实行为。全部内容中英双语（English: [README.md](README.md)）。
 
 适用于任何能加载 `SKILL.md` 技能目录的宿主：Claude Code、OpenAI Codex、Cursor、oh-my-pi（OMP）、Grok CLI、Google Antigravity。
 
@@ -21,6 +21,21 @@
 | `george-resume` | 长任务续接与交接 |
 
 自包含方法参考：[决策闭环](skills/george-mode/references/decision-loop.md)、[先验证、后交付](skills/george-mode/references/verify-before-deliver.md)。
+
+## 理论工具包
+
+[`theory/`](theory/) 收录技能背后的完整方法：《反身实践私典》理论全本、闭环运行手册、AI 协作指令、九份空白项目档案模板、字段与编号规范、理论来源与修订说明，以及八表闭环记录工作簿空白模板（`.xlsx`，中英各一份）。从 [theory/00_开始使用.md](theory/00_开始使用.md) 开始。模板与工作簿均为空白，不含任何真实项目数据。
+
+## 双语结构
+
+每个 Markdown 文件都有另一语言的同级文件：
+
+- 中文原文 `name.md` → 英文 `name.en.md`（全部技能、剧本、参考与理论）。
+- 英文原文 `name.md` → 中文 `name.zh.md`（24 条工程原则、README、NOTICE）。
+- 每个 `SKILL.md` 保留 frontmatter（宿主加载它），描述为“中文 / English”，顶部链接 `SKILL.en.md`。译文文件没有 frontmatter，宿主不会把它们当作独立技能加载。
+- 统一术语：[docs/glossary.md](docs/glossary.md)。
+
+译文与原文有出入时以原文为准。
 
 ## 安装
 
@@ -43,6 +58,7 @@ python3 scripts/install.py --remove --apply   # 卸载
 
 ```sh
 python3 -m unittest discover -s tests
+cd skills/george-orchestrate/tools/pstack && bun install --frozen-lockfile && bun test
 ```
 
 ## 署名

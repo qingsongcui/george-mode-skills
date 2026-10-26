@@ -1,0 +1,12 @@
+# Role and budget configuration
+
+Once the user enables George, Codex, Cursor, OMP, the Grok CLI and Antigravity dispatch autonomously per task: Codex prefers the [Codex adapter](../adapters/codex.md), Cursor the [Cursor adapter](../adapters/cursor.md); local oh-my-pi (`omp`) the [OMP adapter](../adapters/omp.md); Grok Build / the `grok` CLI the [Grok adapter](../adapters/grok.md); Google Antigravity the [Antigravity adapter](../adapters/antigravity.md). Each host's session-level model and reasoning-effort choice replaces the default inheritance rule below; parameters are not applied across hosts. The text below still applies to other hosts not yet adapted and to persistent configuration changes.
+
+Run only when the user asks to adjust role models or budgets. Normally keep the current host settings, default inherit-parent; this skill does not read Poteto's model files as George authorization.
+
+1. Enumerate callable models, roles, reasoning effort, concurrency and cost limits from the current host's actual tools; OMP means the omp command of oh-my-pi, not to be confused with OpenCode or oh-my-opencode. A model being listed does not mean a request succeeds.
+2. Read the current configuration the user specifies; distinguish research, design candidate, implementation, review, independent verification, synthesis and long-task coordination roles. Use the same brief for candidates and different perspectives for reviews; model brand is not role responsibility.
+3. Give a concrete role table by this round's budget and risk; the length of the panel list determines the number of agents. If the user did not ask to change models, inherit; never unilaterally use a fixed "strongest" or paid brand. Roles locked by the host must not be secretly overridden.
+4. When the user has explicitly authorized a config change, back up the corresponding file, verify the real slug/fields and make the minimal change; never overwrite other apps' config or global rules. When target preferences are missing, give a reviewable table first; missing authorization is never filled by defaults.
+5. After the config parses, run an approved real minimal request, verifying discovery, service response and task capability separately; on failure keep the exact error and recovery path. Passing only help/listing cannot be claimed as usable.
+6. Keep update/undo notes. George is enabled on demand by default; role configuration does not create an always-on mode.

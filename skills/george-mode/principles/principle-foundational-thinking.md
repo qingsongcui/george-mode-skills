@@ -14,6 +14,6 @@ Each increment should land a coherent abstraction or deepen one that exists. Do 
 
 Subtraction comes before scaffolding. Remove dead code first, then lay foundations.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-按触发场景应用；结果有证据、适用边界和反例。重要现实决策接理论闭环，普通工程不强制全套经营记账。
+Apply when the trigger fits; results carry evidence, scope limits and counterexamples. Important real-world decisions go through the theory loop; ordinary engineering does not require full operational record-keeping.

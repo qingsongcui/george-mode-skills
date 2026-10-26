@@ -12,6 +12,6 @@ The user is whoever consumes the work. For a UI that is the end user. For a libr
 
 Foundations should serve the experience. Foundational thinking governs the *sequence* of work. This principle governs the *target*.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-体验、可维护性、交付成本共同围绕用户已定目标；不以打磨为名新增未请求范围。
+Experience, maintainability and delivery cost all serve the user's settled goal; do not add unrequested scope in the name of polish.

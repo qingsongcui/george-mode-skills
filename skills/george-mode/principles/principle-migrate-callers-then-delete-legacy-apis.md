@@ -15,6 +15,6 @@ When we decide a new API is the right design, migrate callers and remove the old
 
 Keeping both old and new APIs creates dual-path complexity, slows cleanup, and makes the codebase feel append-only.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-保留原文的适用前提：没有外部消费者、允许协调破坏性变更。线上协议/数据迁移分阶段，旧 API 删除条件事前明确。
+Keep the original preconditions: no external consumers, coordinated breaking changes allowed. Live protocol/data migrations are phased, with the conditions for deleting the old API stated in advance.

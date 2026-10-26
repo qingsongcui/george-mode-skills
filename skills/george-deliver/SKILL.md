@@ -1,8 +1,10 @@
 ---
 name: george-deliver
-description: "George mode 的交付模块。用于已授权的开发、修复、文档成品和配置改动，以真实任务完成为终点。"
+description: "George mode 的交付模块。用于已授权的开发、修复、文档成品和配置改动，以真实任务完成为终点。 / George mode's delivery module. For authorized development, fixes, finished documents and configuration changes, ending only when the real task is done."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 实施与交付
 

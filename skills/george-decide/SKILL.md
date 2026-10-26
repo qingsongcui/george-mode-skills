@@ -1,8 +1,10 @@
 ---
 name: george-decide
-description: "George mode 的理论决策模块。用于重要业务与架构选择，按反身实践闭环登记目标、假设、反证、预测和停止条件。"
+description: "George mode 的理论决策模块。用于重要业务与架构选择，按反身实践闭环登记目标、假设、反证、预测和停止条件。 / George mode's theory-driven decision module. For important business and architecture choices; registers goals, hypotheses, counter-evidence, predictions and stop conditions per the reflexive-practice loop."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 决策与事前承诺
 

@@ -14,6 +14,6 @@ Optimize for the intended, verifiable end state rather than preserving smooth in
 - Keep high-signal checks for actively touched areas while migrating
 - Require full static and runtime verification at plan completion
 
-## George 适用边界
+## George scope (George 适用边界)
 
-阶段性破坏仅在隔离且可回退工作区；可交付阶段必须恢复验证，不能让线上系统承担未批准的中间态。
+Phase breakage is allowed only in an isolated, revertible workspace; deliverable phases must restore verification, and live systems must never carry an unapproved intermediate state.

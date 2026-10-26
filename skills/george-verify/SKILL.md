@@ -1,8 +1,10 @@
 ---
 name: george-verify
-description: "George mode 的验收模块。用于成品、真实运行、平台写入和多宿主适配验收，防止把代理指标当成完成。"
+description: "George mode 的验收模块。用于成品、真实运行、平台写入和多宿主适配验收，防止把代理指标当成完成。 / George mode's acceptance module. Verifies finished products, real runs, platform writes and multi-host adaptation; prevents treating proxy metrics as completion."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 按真实结果验收
 

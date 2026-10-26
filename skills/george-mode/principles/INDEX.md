@@ -26,3 +26,5 @@
 - [subtract-before-you-add](principle-subtract-before-you-add.md)
 - [test-behavior-not-implementation](principle-test-behavior-not-implementation.md)
 - [type-system-discipline](principle-type-system-discipline.md)
+
+原则正文为英文；中文全译见同目录 `*.zh.md`。English version of this index: [INDEX.en.md](INDEX.en.md).

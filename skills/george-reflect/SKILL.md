@@ -1,8 +1,10 @@
 ---
 name: george-reflect
-description: "George mode 的复盘模块。用于对照事前预测与真实反馈、解释失败并提炼有边界的经验；不自动改写全局记忆或理论。"
+description: "George mode 的复盘模块。用于对照事前预测与真实反馈、解释失败并提炼有边界的经验；不自动改写全局记忆或理论。 / George mode's retrospective module. Compares prior predictions with real feedback, explains failures and distills bounded lessons; does not automatically rewrite global memory or the theory."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 反馈与规则更新
 

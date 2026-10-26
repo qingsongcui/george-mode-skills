@@ -14,6 +14,6 @@ When debugging, fix the fault, not the place where it surfaced. The symptom is w
 - If a workaround needs a paragraph-long comment to justify it, the code is wrong. Fix the code, not the comment.
 - If the deciding fact took a deep dig to find, propose the cheap, always-on signal that would have shown it at first look.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-按触发场景应用；结果有证据、适用边界和反例。重要现实决策接理论闭环，普通工程不强制全套经营记账。
+Apply when the trigger fits; results carry evidence, scope limits and counterexamples. Important real-world decisions go through the theory loop; ordinary engineering does not require full operational record-keeping.

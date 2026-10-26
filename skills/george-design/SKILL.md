@@ -1,8 +1,10 @@
 ---
 name: george-design
-description: "George 的结构调查、设计竞争与独立对抗审查。由总入口按风险调用。"
+description: "George 的结构调查、设计竞争与独立对抗审查。由总入口按风险调用。 / George's structural investigation, competing designs and independent adversarial review. Invoked by the main entry according to risk."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 调查、设计和审查
 

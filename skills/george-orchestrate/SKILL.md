@@ -1,8 +1,10 @@
 ---
 name: george-orchestrate
-description: "George 的多阶段编排、PR推进、持续执行、暂停和恢复。按任务寿命和规模启用。"
+description: "George 的多阶段编排、PR推进、持续执行、暂停和恢复。按任务寿命和规模启用。 / George's multi-phase orchestration, PR progression, continuous execution, pausing and resuming. Enabled according to task lifetime and scale."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 编排与持久执行
 

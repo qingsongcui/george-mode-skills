@@ -15,6 +15,6 @@ The strongest proof is a deterministic script that re-runs the same comparison, 
 
 Keep the artifact visible for the human. Commit it only for large or complex work where the trail has to be auditable later, like a big port or migration (the **show-me-your-work** skill).
 
-## George 适用边界
+## George scope (George 适用边界)
 
-文件、运行、平台生效、采用、收入分层；退出0、截图、代理自报均不能跨层证明。
+File, run, platform effect, adoption and revenue are separate layers; exit code 0, screenshots or agent self-reports cannot prove a higher layer.

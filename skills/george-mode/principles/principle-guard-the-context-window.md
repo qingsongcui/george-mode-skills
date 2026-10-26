@@ -5,6 +5,6 @@
 **Pattern:**
 - **Size phases and cap scope.** Limit files per phase, set turn budgets, account for mechanism costs.
 
-## George 适用边界
+## George scope (George 适用边界)
 
-先缩小读取范围、查询和索引；授权且宿主支持时才委派大批读取。保留证据位置与压缩边界。
+First narrow the reading scope, queries and indexes; delegate bulk reading only when authorized and supported by the host. Keep evidence locations and compression boundaries.

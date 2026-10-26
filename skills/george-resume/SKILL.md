@@ -1,8 +1,10 @@
 ---
 name: george-resume
-description: "George mode 的续接模块。用于恢复长任务、交接与授权的并行工作，保留原目标、用户修正及实际完成证据。"
+description: "George mode 的续接模块。用于恢复长任务、交接与授权的并行工作，保留原目标、用户修正及实际完成证据。 / George mode's continuation module. Resumes long tasks, handoffs and authorized parallel work, keeping the original goal, user corrections and evidence of actual completion."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 续接与交接
 

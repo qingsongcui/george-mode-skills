@@ -1,8 +1,10 @@
 ---
 name: george-mode
-description: "George mode 总入口。仅在用户调用 /george-mode、$george-mode 或明确要求按 George 的方式工作时使用；按任务轻重连接理论、调查、执行与反馈。"
+description: "George mode 总入口。仅在用户调用 /george-mode、$george-mode 或明确要求按 George 的方式工作时使用；按任务轻重连接理论、调查、执行与反馈。 / George mode main entry. Use only when the user invokes /george-mode, $george-mode or explicitly asks to work George's way; connects theory, investigation, execution and feedback according to task weight."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # George mode
 

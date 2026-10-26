@@ -1,8 +1,10 @@
 ---
 name: george-investigate
-description: "George mode 的只读调查模块。用于项目摸底、原始证据核查及经授权的 Agent 历史挖掘，产出覆盖范围、证据和未解问题。"
+description: "George mode 的只读调查模块。用于项目摸底、原始证据核查及经授权的 Agent 历史挖掘，产出覆盖范围、证据和未解问题。 / George mode's read-only investigation module. For project surveys, checking raw evidence and authorized mining of agent history; outputs coverage, evidence and open questions."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 调查与建模
 

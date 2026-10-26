@@ -1,8 +1,10 @@
 ---
 name: george-engineer
-description: "George 的完整开发领域包，处理功能、故障、重构、性能、取证、视觉等价和工程交付。"
+description: "George 的完整开发领域包，处理功能、故障、重构、性能、取证、视觉等价和工程交付。 / George's complete engineering domain pack: features, bugs, refactors, performance, forensics, visual parity and engineering delivery."
 disable-model-invocation: true
 ---
+
+> English: [SKILL.en.md](SKILL.en.md) · 中文正文见下方。
 
 # 开发领域包
 
